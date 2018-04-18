@@ -1,0 +1,4 @@
+#Wed Apr 18 18:14:13 YEKT 2018
+base.0=/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+path.0=classes.dex

@@ -4,6 +4,9 @@
 # expo
 .expo/
 
+# android
+/android/local.properties
+
 # dependencies
 /node_modules
 
@@ -24,7 +27,8 @@ yarn-error.log*
 /out-tsc
 
 # IDEs and editors
-/.idea
+.gradle
+.idea
 .project
 .classpath
 .c9/
