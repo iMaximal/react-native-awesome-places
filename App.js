@@ -1,26 +1,37 @@
 import React, { Component } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, YellowBox } from 'react-native';
 import PlaceInput from './src/components/PlaceInput/PlaceInput';
 import PlaceList from './src/components/PlaceList/PlaceList';
 
 export default class App extends Component {
-  state = {
-    places: [],
-  };
+  constructor(props) {
+    super(props);
 
+    this.state = {
+      places: [],
+    };
+
+    YellowBox.ignoreWarnings([
+      'Warning: componentWillMount is deprecated',
+      'Warning: componentWillReceiveProps is deprecated',
+    ]);
+  }
 
   placeAddedHandler = (placeName) => {
     this.setState(prevState => {
       return {
-        places: prevState.places.concat(placeName),
+        places: prevState.places.concat({
+          key: String(Math.random()),
+          value: placeName,
+        }),
       };
     });
   };
 
-  placeDeletedHandler = (index) => {
+  placeDeletedHandler = (key) => {
     this.setState(prevState => {
       return {
-        places: prevState.places.filter((place, i) => i !== index),
+        places: prevState.places.filter((place) => place.key !== key),
       };
     });
   };
