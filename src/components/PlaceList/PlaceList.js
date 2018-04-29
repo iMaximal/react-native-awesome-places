@@ -12,7 +12,8 @@ const placeList = (props) => {
       keyExtractor={item => item.key}
       renderItem={(place) => (
         <ListItem
-          placeName={ place.item.value }
+          placeName={ place.item.name }
+          placeImage={ place.item.image }
           onItemPressed={ () => props.onItemDeleted(place.item.key) }
         />
       )}
