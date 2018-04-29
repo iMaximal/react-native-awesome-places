@@ -6,7 +6,48 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		bO5qmU6xt9fgUjcy3auNqLo+52s=
+		1sNbgvd4rbLHpObMfcABO9Ecv3M=
+		</data>
+		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
+		<data>
+		PM04ohL+tpX8HYsmZndzNiahogM=
+		</data>
+		<key>Frameworks/IDEBundleInjection.framework/Info.plist</key>
+		<data>
+		yVEF+IAFxPMrETjk62TYUsSZZoY=
+		</data>
+		<key>Frameworks/IDEBundleInjection.framework/_CodeSignature/CodeResources</key>
+		<data>
+		zoD3Qa8gxI+Cn8eWli9Qhwj3hO0=
+		</data>
+		<key>Frameworks/IDEBundleInjection.framework/version.plist</key>
+		<data>
+		AKh1zJiXarm2j6t4HiBBfLajCzk=
+		</data>
+		<key>Frameworks/XCTest.framework/Info.plist</key>
+		<data>
+		THfQZgzkqYfCF+1a6Qiiyg4PBvk=
+		</data>
+		<key>Frameworks/XCTest.framework/XCTest</key>
+		<data>
+		kcj25XRrQvP/qx+D4sgQlfuUVpI=
+		</data>
+		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
+		<data>
+		3CgG/k5wQrc9AU6lVjrD6VTdHUo=
+		</data>
+		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TuBj57ZP6zBqcL9HttO2Rucaw9E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/XCTest.framework/version.plist</key>
+		<data>
+		4NEkyhJ9SrLJFKYhtHIBA6JBUFk=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -16,6 +57,26 @@
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>PlugIns/reactnativeawesomeplacesTests.xctest.dSYM/Contents/Info.plist</key>
+		<data>
+		Gk70FPHR8yLVrb82dzy3eyEaeZU=
+		</data>
+		<key>PlugIns/reactnativeawesomeplacesTests.xctest.dSYM/Contents/Resources/DWARF/reactnativeawesomeplacesTests</key>
+		<data>
+		JqNQ3xLBl6xJ9EffHZ+zar8b800=
+		</data>
+		<key>PlugIns/reactnativeawesomeplacesTests.xctest/Info.plist</key>
+		<data>
+		GYixykLbdHqtFRTW7c+nqZpa76k=
+		</data>
+		<key>PlugIns/reactnativeawesomeplacesTests.xctest/_CodeSignature/CodeResources</key>
+		<data>
+		fl+fFh1RY/BB5qPP4Swu1VeiMwU=
+		</data>
+		<key>PlugIns/reactnativeawesomeplacesTests.xctest/reactnativeawesomeplacesTests</key>
+		<data>
+		LnScvyJ06SOu9Aa8SPlZfpnn8Y0=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -23,11 +84,167 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bO5qmU6xt9fgUjcy3auNqLo+52s=
+			1sNbgvd4rbLHpObMfcABO9Ecv3M=
 			</data>
 			<key>hash2</key>
 			<data>
-			uoA6OSi2zMvQaOje9PbI7pwRsq0/YtdjZs8eGRtTHHg=
+			ZWXQeGurNco+tZU0JIbrw01L1Mne2Np9kDHeBiQHd8k=
+			</data>
+		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PM04ohL+tpX8HYsmZndzNiahogM=
+			</data>
+			<key>hash2</key>
+			<data>
+			skWCjbSCq4Do0CfB9M9H/oIKb8E6u811RNZ3C4RCgr8=
+			</data>
+		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yVEF+IAFxPMrETjk62TYUsSZZoY=
+			</data>
+			<key>hash2</key>
+			<data>
+			9CAwBh/gVNHbUVChmC57vhLKF/T8yHQUP8JfXzX4IrA=
+			</data>
+		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zoD3Qa8gxI+Cn8eWli9Qhwj3hO0=
+			</data>
+			<key>hash2</key>
+			<data>
+			NhL3FSmi+ubMNRzjMlAyyh6e9hsdJvc1F6dCLhXfQXo=
+			</data>
+		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/version.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AKh1zJiXarm2j6t4HiBBfLajCzk=
+			</data>
+			<key>hash2</key>
+			<data>
+			4ReRxHthIWbMqGoVvBSVgDBXj1VsdaAW3Ugx/lWXjnM=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			THfQZgzkqYfCF+1a6Qiiyg4PBvk=
+			</data>
+			<key>hash2</key>
+			<data>
+			rCvsePGwevZyhF3ZQyq8mLkMpOpOa2bePzPRXJ5zAdQ=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/XCTest</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kcj25XRrQvP/qx+D4sgQlfuUVpI=
+			</data>
+			<key>hash2</key>
+			<data>
+			9U8DN2XC2S+3i8hOw4JwkbJ5Umq/khonj/aFSTUu5dM=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3CgG/k5wQrc9AU6lVjrD6VTdHUo=
+			</data>
+			<key>hash2</key>
+			<data>
+			3510nfxvxFwFf3lY60q05h559sn/b/FiXKLJJnn5cHw=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TuBj57ZP6zBqcL9HttO2Rucaw9E=
+			</data>
+			<key>hash2</key>
+			<data>
+			89RGkjZaKuewYnjpzwhIswhqfrU8+pcEXqM/DHVrUmo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/XCTest.framework/version.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4NEkyhJ9SrLJFKYhtHIBA6JBUFk=
+			</data>
+			<key>hash2</key>
+			<data>
+			npuwVsQMT6N9VGE0YqH9a729MzPY+LnokIqdklNFhIs=
+			</data>
+		</dict>
+		<key>PlugIns/reactnativeawesomeplacesTests.xctest.dSYM/Contents/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Gk70FPHR8yLVrb82dzy3eyEaeZU=
+			</data>
+			<key>hash2</key>
+			<data>
+			rFkUE6iKiO2gicleqFz/HVaCmQmH5AQjxaAfYhJ4yrM=
+			</data>
+		</dict>
+		<key>PlugIns/reactnativeawesomeplacesTests.xctest.dSYM/Contents/Resources/DWARF/reactnativeawesomeplacesTests</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JqNQ3xLBl6xJ9EffHZ+zar8b800=
+			</data>
+			<key>hash2</key>
+			<data>
+			J4nZI3yZdCSX9mEnNnFIbOexZjmzYiodsQWpR6BGZq4=
+			</data>
+		</dict>
+		<key>PlugIns/reactnativeawesomeplacesTests.xctest/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GYixykLbdHqtFRTW7c+nqZpa76k=
+			</data>
+			<key>hash2</key>
+			<data>
+			47NtD1r8LYoreUjDeW4Ny7bJIEckVAqnmWomwZUiP0s=
+			</data>
+		</dict>
+		<key>PlugIns/reactnativeawesomeplacesTests.xctest/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fl+fFh1RY/BB5qPP4Swu1VeiMwU=
+			</data>
+			<key>hash2</key>
+			<data>
+			ppgAQUUQS5JxNEUOZe8qIkuu79fA74aN2v7kCd6gg0U=
+			</data>
+		</dict>
+		<key>PlugIns/reactnativeawesomeplacesTests.xctest/reactnativeawesomeplacesTests</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LnScvyJ06SOu9Aa8SPlZfpnn8Y0=
+			</data>
+			<key>hash2</key>
+			<data>
+			e+g6E51thxtYjDCkURnQtoYPZRLCUd4nD8jZSRnnYr0=
 			</data>
 		</dict>
 	</dict>
