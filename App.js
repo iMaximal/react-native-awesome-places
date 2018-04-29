@@ -24,7 +24,10 @@ export default class App extends Component {
         places: prevState.places.concat({
           key: String(Math.random()),
           name: placeName,
-          image: placeImage,
+          // image: placeImage,
+          image: {
+            uri: 'https://sun9-17.userapi.com/c840720/v840720064/792a6/4dvdKe-m3N8.jpg',
+          },
         }),
       };
     });
