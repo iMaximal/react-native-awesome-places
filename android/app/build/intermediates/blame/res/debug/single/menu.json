@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/res/merged/debug/menu/stub.xml",
+        "source": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/exploded-aar/reactnativeawesomeplaces/react-native-navigation/unspecified/res/menu/stub.xml"
+    },
+    {
+        "merged": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/res/merged/debug/menu/search_item.xml",
+        "source": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/exploded-aar/reactnativeawesomeplaces/react-native-navigation/unspecified/res/menu/search_item.xml"
+    }
+]
