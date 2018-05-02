@@ -29,5 +29,6 @@ dependencies: \
   /Users/maximal/Projects/react-native-awesome-places/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTURLRequestDelegate.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/Libraries/Image/RCTImageShadowView.h \
   /Users/maximal/Projects/react-native-awesome-places/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView.h \
+  /Users/maximal/Projects/react-native-awesome-places/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLayout.h \
   /Users/maximal/Projects/react-native-awesome-places/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/Libraries/Image/RCTImageView.h

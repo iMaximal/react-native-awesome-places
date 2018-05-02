@@ -25,4 +25,5 @@ dependencies: \
   /Users/maximal/Projects/react-native-awesome-places/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/Libraries/Text/RawText/RCTRawTextShadowView.h \
   /Users/maximal/Projects/react-native-awesome-places/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView.h \
+  /Users/maximal/Projects/react-native-awesome-places/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLayout.h \
   /Users/maximal/Projects/react-native-awesome-places/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h

@@ -29,5 +29,7 @@ dependencies: \
   /Users/maximal/Projects/react-native-awesome-places/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
   /Users/maximal/Projects/react-native-awesome-places/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTViewManager.h \
   /Users/maximal/Projects/react-native-awesome-places/ios/build/Build/Products/Debug-iphonesimulator/include/React/UIView+React.h \
+  /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/Libraries/Text/TextInput/RCTInputAccessoryView.h \
+  /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/Libraries/Text/TextInput/RCTInputAccessoryViewContent.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/Libraries/Text/RCTTextAttributes.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/Libraries/Text/TextInput/RCTTextSelection.h

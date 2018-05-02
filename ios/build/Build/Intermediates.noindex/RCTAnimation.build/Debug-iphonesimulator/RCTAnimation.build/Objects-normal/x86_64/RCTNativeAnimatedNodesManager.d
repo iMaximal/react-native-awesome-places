@@ -40,4 +40,5 @@ dependencies: \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTPropsAnimatedNode.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/Libraries/NativeAnimation/Drivers/RCTSpringAnimation.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTStyleAnimatedNode.h \
-  /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTTransformAnimatedNode.h
+  /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTTransformAnimatedNode.h \
+  /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTTrackingAnimatedNode.h

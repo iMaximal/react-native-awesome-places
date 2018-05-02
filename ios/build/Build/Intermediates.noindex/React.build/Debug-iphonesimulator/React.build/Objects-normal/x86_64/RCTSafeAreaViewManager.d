@@ -25,6 +25,7 @@ dependencies: \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Views/RCTComponent.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Views/SafeAreaView/RCTSafeAreaShadowView.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Views/RCTShadowView.h \
+  /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Views/RCTLayout.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Base/RCTRootView.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Views/SafeAreaView/RCTSafeAreaView.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Views/RCTView.h \

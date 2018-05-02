@@ -16,10 +16,11 @@ dependencies: \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Views/RCTShadowView+Layout.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Views/RCTShadowView.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Views/RCTComponent.h \
-  /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Base/RCTRootView.h \
+  /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Views/RCTLayout.h \
   /Users/maximal/Projects/react-native-awesome-places/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
   /Users/maximal/Projects/react-native-awesome-places/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
   /Users/maximal/Projects/react-native-awesome-places/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Base/RCTRootView.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Base/Surface/RCTSurfaceDelegate.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Base/Surface/RCTSurfaceRootShadowView.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Base/Surface/RCTSurfaceRootShadowViewDelegate.h \
@@ -37,4 +38,5 @@ dependencies: \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Base/RCTEventDispatcher.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Views/UIView+React.h \
+  /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Modules/RCTUIManagerObserverCoordinator.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Modules/RCTUIManagerUtils.h

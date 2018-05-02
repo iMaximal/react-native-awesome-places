@@ -38,6 +38,7 @@ dependencies: \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Views/RCTView.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Views/RCTRootShadowView.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Views/RCTShadowView.h \
+  /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Views/RCTLayout.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Base/RCTRootViewInternal.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Views/ScrollView/RCTScrollableProtocol.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/React/Views/RCTShadowView+Internal.h \

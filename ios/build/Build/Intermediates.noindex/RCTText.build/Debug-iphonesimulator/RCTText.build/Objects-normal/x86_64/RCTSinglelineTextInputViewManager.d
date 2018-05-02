@@ -28,6 +28,7 @@ dependencies: \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/Libraries/Text/TextInput/RCTBaseTextInputShadowView.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/Libraries/Text/BaseText/RCTBaseTextShadowView.h \
   /Users/maximal/Projects/react-native-awesome-places/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView.h \
+  /Users/maximal/Projects/react-native-awesome-places/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLayout.h \
   /Users/maximal/Projects/react-native-awesome-places/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/Libraries/Text/RCTTextAttributes.h \
   /Users/maximal/Projects/react-native-awesome-places/node_modules/react-native/Libraries/Text/TextInput/Singleline/RCTSinglelineTextInputView.h \
