@@ -4,7 +4,6 @@ import { FlatList, StyleSheet } from 'react-native';
 import ListItem from '../ListItem/ListItem';
 
 const placeList = (props) => {
-
   return (
     <FlatList
       style={ styles.listContainer }
