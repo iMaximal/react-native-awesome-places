@@ -13,6 +13,30 @@ import ButtonWithBackground from '../../components/UI/ButtonWithBackground/Butto
 import backgroundImage from '../../assets/background.jpg';
 
 class AuthScreen extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      respStyles: {
+        pwContainerDirection: 'column',
+        pwContainerJustifyContent: 'flex-start',
+        pwWrapperWidth: '100%',
+      }
+    };
+
+    Dimensions.addEventListener('change', (dims) => {
+      const isDimensionsMore = Dimensions.get('window').height > 500;
+
+      this.setState({
+        respStyle: {
+          pwContainerDirection: isDimensionsMore ? 'column' : 'row',
+          pwContainerJustifyContent: isDimensionsMore ? 'flex-start' : 'space-between',
+          pwWrapperWidth: isDimensionsMore ? '100%' : '45%',
+        },
+      });
+    });
+  }
+
   loginHandler = () => {
     startMainTabs();
   };
@@ -35,14 +59,21 @@ class AuthScreen extends Component {
       >
         <View style={ styles.container }>
           { headingText }
-          <ButtonWithBackground color="#29aaf4" onPress={() => alert('Hello')}>Switch to Login</ButtonWithBackground>
+          <ButtonWithBackground color="#29aaf4" onPress={ () => alert('Hello') }>Switch to Login</ButtonWithBackground>
           <View style={ styles.inputContainer }>
             <DefaultImport placeholder="Your E-Mail Address" style={ styles.input }/>
-            <View style={ styles.passwordContainer }>
-              <View style={ styles.passwordWrapper }>
+            <View style={ {
+              flexDirection: this.state.respStyles.pwContainerDirection,
+              justifyContent: this.state.respStyles.pwContainerJustifyContent,
+            } }>
+              <View style={ {
+                width: this.state.respStyles.pwWrapperWidth,
+              } }>
                 <DefaultImport placeholder="Password" style={ styles.input }/>
               </View>
-              <View style={ styles.passwordWrapper }>
+              <View style={ {
+                width: this.state.respStyles.pwWrapperWidth,
+              } }>
                 <DefaultImport placeholder="Confirm Password" style={ styles.input }/>
               </View>
             </View>
