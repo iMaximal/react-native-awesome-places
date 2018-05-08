@@ -18,6 +18,10 @@ class SharePlaceScreen extends Component {
     this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
   }
 
+  static navigatorStyle = {
+    navBarButtonColor: 'orange',
+  };
+
   onNavigatorEvent = (event) => {
     if (event.type === 'NavBarButtonPress') {
       if (event.id === 'sideDrawerToggle') {
