@@ -60,6 +60,20 @@ class AuthScreen extends Component {
     startMainTabs();
   };
 
+  updateInputState = (key, value) => {
+    this.setState(prevState => {
+      return {
+        controls: {
+          ...prevState.controls,
+          [key]: {
+            ...prevState.controls[key],
+            value,
+          }
+        }
+      }
+    });
+  };
+
   render() {
     let headingText = null;
 
@@ -83,6 +97,7 @@ class AuthScreen extends Component {
               placeholder="Your E-Mail Address"
               style={ styles.input }
               value={this.state.controls.email.value}
+              onChangeTextHandler={(value) => this.updateInputState('email', value)}
             />
             <View style={
               this.state.viewMode === 'portrait'
@@ -96,7 +111,12 @@ class AuthScreen extends Component {
                   : styles.landscapePasswordWrapper
               }
               >
-                <DefaultImport placeholder="Password" style={ styles.input }/>
+                <DefaultImport
+                  placeholder="Password"
+                  style={ styles.input }
+                  value={this.state.controls.password.value}
+                  onChangeTextHandler={(value) => this.updateInputState('password', value)}
+                />
               </View>
               <View style={
                 this.state.viewMode === 'portrait'
@@ -104,7 +124,12 @@ class AuthScreen extends Component {
                   : styles.landscapePasswordWrapper
               }
               >
-                <DefaultImport placeholder="Confirm Password" style={ styles.input }/>
+                <DefaultImport
+                  placeholder="Confirm Password"
+                  style={ styles.input }
+                  value={this.state.controls.confirmPassword.value}
+                  onChangeTextHandler={(value) => this.updateInputState('confirmPassword', value)}
+                />
               </View>
             </View>
           </View>
