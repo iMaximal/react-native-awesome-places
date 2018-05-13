@@ -18,6 +18,29 @@ class AuthScreen extends Component {
 
     this.state = {
       viewMode: Dimensions.get('window').height > 500 ? 'portrait' : 'landscape',
+      controls: {
+        email: {
+          value: '',
+          valid: false,
+          validationRules: {
+            isEmail: true,
+          }
+        },
+        password: {
+          value: '',
+          valid: false,
+          validationRules: {
+            minLength: 6,
+          }
+        },
+        confirmPassword: {
+          value: '',
+          valid: false,
+          validationRules: {
+            equalTo: 'password',
+          }
+        },
+      },
     };
 
     Dimensions.addEventListener('change', this.updateStyle);
@@ -54,10 +77,13 @@ class AuthScreen extends Component {
         style={ styles.backgroundImage }
       >
         <View style={ styles.container }>
-          { headingText }
           <ButtonWithBackground color="#29aaf4" onPress={ () => alert('Hello') }>Switch to Login</ButtonWithBackground>
           <View style={ styles.inputContainer }>
-            <DefaultImport placeholder="Your E-Mail Address" style={ styles.input }/>
+            <DefaultImport
+              placeholder="Your E-Mail Address"
+              style={ styles.input }
+              value={this.state.controls.email.value}
+            />
             <View style={
               this.state.viewMode === 'portrait'
                 ? styles.portraitPasswordContainer
