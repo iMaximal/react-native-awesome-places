@@ -93,7 +93,7 @@ class AuthScreen extends Component {
         equalTo: equalValue
       };
     }
-    if (key === "password") {
+    if (key === 'password') {
       connectedValue = {
         ...connectedValue,
         equalTo: value
@@ -106,7 +106,7 @@ class AuthScreen extends Component {
           confirmPassword: {
             ...prevState.controls.confirmPassword,
             valid:
-              key === "password"
+              key === 'password'
                 ? validate(
                 prevState.controls.confirmPassword.value,
                 prevState.controls.confirmPassword.validationRules,
