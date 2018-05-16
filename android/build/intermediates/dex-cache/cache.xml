@@ -102,6 +102,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-10.0.1_a5a1c8364eb319a8a4764cc0e21752a7ffbb1c20.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/maximal/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
         jumboMode="false"
         optimize="true"
@@ -135,6 +144,24 @@
         revision="25.0.1"
         sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
         <dex dex="/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.3.1_2b4bd4e17b6e3eb818efa4d808c56687bbd0f294.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
+        <dex dex="/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-10.0.1_d4812b79e06ffeb10b81a23d06114bb1d1fc0764.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-10.0.1_3a4853621e6dc221b50377b8516ae6815ed9cebd.jar" />
     </item>
     <item
         is-multidex="false"
@@ -327,6 +354,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-10.0.1_61bcac582be8d3509343ffeb8960b6c0bd6472c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.3/jars/libs/infer-annotations-4.0.jar"
         jumboMode="false"
         optimize="true"
@@ -423,6 +459,15 @@
         revision="25.0.1"
         sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
         <dex dex="/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_94d217a0759e3992801a5facaa12e1aca3e085dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/exploded-aar/reactnativeawesomeplaces/react-native-maps/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ee173414909b5091c319c8572bd45cb84f60dde9">
+        <dex dex="/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/pre-dexed/debug/reactnativeawesomeplaces-react-native-maps-unspecified_23616db899714816eda07f8ec09246c04037b5d3.jar" />
     </item>
     <item
         is-multidex="false"

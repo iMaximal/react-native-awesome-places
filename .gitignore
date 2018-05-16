@@ -8,6 +8,9 @@
 # android
 /android/local.properties
 
+#iOS
+/ios/reactnativeawesomeplaces/AppDelegate.m
+
 # dependencies
 node_modules
 
