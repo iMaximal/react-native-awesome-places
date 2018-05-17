@@ -36,6 +36,24 @@ class PickLocation extends Component {
     });
   };
 
+  getLocationHandler = () => {
+    navigator.geolocation.getCurrentPosition((pos) => {
+        const coordsEvent = {
+          nativeEvent: {
+            coordinate: {
+              latitude: pos.coords.latitude,
+              longitude: pos.coords.longitude,
+            }
+          }
+        };
+        this.pickLocationHandler(coordsEvent);
+      },
+      (error) => {
+        console.log(err); // todo
+        alert('Fetching the Position failed, please pick one manually!');
+      });
+  };
+
   render() {
     let marker = null;
 
@@ -49,14 +67,14 @@ class PickLocation extends Component {
           initialRegion={ this.state.focusedLocation }
           style={ styles.map }
           onPress={ this.pickLocationHandler }
-          ref={(ref) => this.map = ref}
+          ref={ (ref) => this.map = ref }
         >
           { marker }
         </MapView>
         <View style={ styles.button }>
           <Button
             title="Locate Me"
-            onPress={ () => alert('Locate!') }
+            onPress={ this.getLocationHandler }
           />
         </View>
       </View>
