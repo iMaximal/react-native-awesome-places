@@ -32,12 +32,12 @@
         "source": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/drawable-xxhdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png",
-        "source": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png"
-    },
-    {
         "merged": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_pressed.9.png",
         "source": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_pressed.9.png"
+    },
+    {
+        "merged": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png",
+        "source": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png"
     },
     {
         "merged": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/abc_textfield_activated_mtrl_alpha.9.png",

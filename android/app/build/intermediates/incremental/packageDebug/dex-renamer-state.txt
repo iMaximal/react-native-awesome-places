@@ -1,4 +1,4 @@
-#Thu May 17 18:35:30 YEKT 2018
+#Fri May 18 16:52:24 YEKT 2018
 base.0=/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
 file.0=/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

@@ -219,6 +219,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/exploded-aar/reactnativeawesomeplaces/react-native-image-picker/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="688d4ffd9b573d9bfa4d911dddd85e539e2b02a3">
+        <dex dex="/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/pre-dexed/debug/reactnativeawesomeplaces-react-native-image-picker-unspecified_3e198a373b6c765bc14f30282458fe4d0192b9ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/maximal/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
         jumboMode="false"
         optimize="true"
