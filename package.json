@@ -18,6 +18,8 @@
     "preset": "react-native"
   },
   "dependencies": {
+    "@google-cloud/storage": "^1.6.0",
+    "cors": "^2.8.4",
     "react": "^16.3.2",
     "react-native": "^0.55.3",
     "react-native-image-picker": "^0.26.10",
@@ -26,6 +28,7 @@
     "react-native-vector-icons": "^4.6.0",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "uuid-v4": "^0.1.0"
   }
 }
