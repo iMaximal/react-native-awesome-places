@@ -4,6 +4,7 @@
 .firebaserc
 firebase-debug.log
 /functions/key.json
+/firebase.json
 
 # expo
 .expo/

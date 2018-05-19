@@ -27,11 +27,25 @@ exports.storeImage = functions.https.onRequest((request, response) => {
       uploadType: 'media',
       destination: '/places/' + uuid + '.jpg',
       metadata: {
-        contentType: 'image/jpeg',
-        firebaseStorageDownloadToken: uuid,
+        metadata: {
+          contentType: 'image/jpeg',
+          firebaseStorageDownloadToken: uuid,
+        },
       },
+    }, (error, file) => {
+      if (!error) {
+        response.status(201).json({
+          imageUrl: 'https://firebasestorage.googleapis.com/v0/b/' +
+          bucket.name +
+          '/o/' +
+          encodeURIComponent(file.name) +
+            '?alt=media&token=' +
+            uuid
+        })
+      } else {
+        console.log(error);
+        response.status(500).json({ error })
+      }
     });
   });
-
-  response.send("Hello from Firebase!");
 });
