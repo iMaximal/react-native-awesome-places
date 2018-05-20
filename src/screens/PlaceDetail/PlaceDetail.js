@@ -9,9 +9,9 @@ import {
   Dimensions,
 } from 'react-native';
 import { connect } from 'react-redux';
+import MapView from 'react-native-maps';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { deletePlace } from '../../store/actions/index';
-import MapView from 'react-native-maps';
 
 
 class PlaceDetail extends Component {
@@ -75,7 +75,9 @@ class PlaceDetail extends Component {
         </View>
         <View style={ styles.subContainer }>
           <View>
-            <Text style={ styles.placeName }>{ this.props.selectedPlace.name }</Text>
+            <Text style={ styles.placeName }>
+              { this.props.selectedPlace.name }
+              </Text>
           </View>
           <View style={ styles.deleteButton }>
             <TouchableOpacity onPress={ this.placeDeletedHandler }>
