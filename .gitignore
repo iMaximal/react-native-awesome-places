@@ -5,6 +5,7 @@
 firebase-debug.log
 /functions/key.json
 /firebase.json
+/src/store/actions/constants.js
 
 # expo
 .expo/
