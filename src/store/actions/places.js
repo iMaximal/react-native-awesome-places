@@ -10,30 +10,30 @@ export const addPlace = (placeName, location, image) => {
         image: image.base64,
       }),
     })
-      .catch(error => {
-        console.log(error);
-        alert('Something went wrong, please try again!');
-        dispatch(uiStopLoading());
-      })
       .then(res => res.json())
       .then(parsedRes => {
         const placeData = {
           name: placeName,
           location,
           image: parsedRes.imageUrl,
-        };
-        return fetch('https://react-native-awe-1526404146569.firebaseio.com/places.json', {
-          method: 'POST',
-          body: JSON.stringify(placeData),
-        })
+        }
           .catch(error => {
             console.log(error);
             alert('Something went wrong, please try again!');
             dispatch(uiStopLoading());
-          })
+          });
+        return fetch('https://react-native-awe-1526404146569.firebaseio.com/places.json', {
+          method: 'POST',
+          body: JSON.stringify(placeData),
+        })
           .then((res) => res.json())
           .then((parsedRes) => {
             console.log(parsedRes);
+            dispatch(uiStopLoading());
+          })
+          .catch(error => {
+            console.log(error);
+            alert('Something went wrong, please try again!');
             dispatch(uiStopLoading());
           });
       });
@@ -43,10 +43,6 @@ export const addPlace = (placeName, location, image) => {
 export const getPlaces = () => {
   return (dispatch) => {
     fetch('https://react-native-awe-1526404146569.firebaseio.com/places.json')
-      .catch((error) => {
-        alert('Something went wrong, sorry!');
-        console.log(error);
-      })
       .then((res) => res.json())
       .then((parsedRes => {
         const places = [];
@@ -60,7 +56,11 @@ export const getPlaces = () => {
           });
         }
         dispatch(setPlaces(places));
-      }));
+      }))
+      .catch((error) => {
+        alert('Something went wrong, sorry!');
+        console.log(error);
+      });
   };
 };
 
@@ -77,13 +77,13 @@ export const deletePlace = (key) => {
     fetch('https://react-native-awe-1526404146569.firebaseio.com/places/' + key + '.json', {
       method: 'DELETE',
     })
-      .catch((error) => {
-        alert('Something went wrong, sorry!');
-        console.log(error);
-      })
       .then((res) => res.json())
       .then((parsedRes) => {
         console.log('Done!');
+      })
+      .catch((error) => {
+        alert('Something went wrong, sorry!');
+        console.log(error);
       });
   };
 };
