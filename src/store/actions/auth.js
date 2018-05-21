@@ -3,16 +3,16 @@ import { API_AUTH_KEY } from './constants';
 import { uiStartLoading, uiStopLoading} from './index';
 import startMainTabs from '../../screens/MainTabs/startMainTabs';
 
-export const tryAuth = (authData) => {
-  return (dispatch) => {
-    dispatch(authSignup(authData));
-  };
-};
-
-export const authSignup = (authData) => {
+export const tryAuth = (authData, authMode) => {
   return (dispatch) => {
     dispatch(uiStartLoading());
-    fetch(`https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=${API_AUTH_KEY}`, {
+
+    let url = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=${API_AUTH_KEY}`;
+
+    if (authMode === 'signup') {
+      url = `https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=${API_AUTH_KEY}`;
+    }
+    fetch(url, {
       method: 'POST',
       body: JSON.stringify({
         email: authData.email,
