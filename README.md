@@ -5,6 +5,8 @@ For study.
 
 iOS & Android App.
 
+Technologies: React Native (navigation, vector-icons, image picker, maps), Firebase (storage, function, database, API, auth).
+
 In dev.
 
 Some files are hidden for security reasons.
