@@ -46,8 +46,12 @@ export const addPlace = (placeName, location, image) => {
 };
 
 export const getPlaces = () => {
-  return (dispatch) => {
-    fetch('https://react-native-awe-1526404146569.firebaseio.com/places.json')
+  return (dispatch, getState) => {
+    const token = getState().auth.token;
+    if (!token) {
+      return;
+    }
+    fetch(`https://react-native-awe-1526404146569.firebaseio.com/places.json?auth=${token}`)
       .then((res) => res.json())
       .then((parsedRes => {
         const places = [];
