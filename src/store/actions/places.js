@@ -10,32 +10,37 @@ export const addPlace = (placeName, location, image) => {
         image: image.base64,
       }),
     })
+      .catch(error => {
+        console.log(error);
+        alert('Something went wrong, please try again!');
+        dispatch(uiStopLoading());
+      })
       .then(res => res.json())
       .then(parsedRes => {
         const placeData = {
           name: placeName,
           location,
           image: parsedRes.imageUrl,
-        }
-          .catch(error => {
-            console.log(error);
-            alert('Something went wrong, please try again!');
-            dispatch(uiStopLoading());
-          });
+        };
         return fetch('https://react-native-awe-1526404146569.firebaseio.com/places.json', {
           method: 'POST',
           body: JSON.stringify(placeData),
-        })
-          .then((res) => res.json())
-          .then((parsedRes) => {
-            console.log(parsedRes);
-            dispatch(uiStopLoading());
-          })
-          .catch(error => {
-            console.log(error);
-            alert('Something went wrong, please try again!');
-            dispatch(uiStopLoading());
-          });
+        });
+      })
+      .catch(error => {
+        console.log(error);
+        alert('Something went wrong, please try again!');
+        dispatch(uiStopLoading());
+      })
+      .then((res) => res.json())
+      .then((parsedRes) => {
+        console.log(parsedRes);
+        dispatch(uiStopLoading());
+      })
+      .catch(error => {
+        console.log(error);
+        alert('Something went wrong, please try again!');
+        dispatch(uiStopLoading());
       });
   };
 };
