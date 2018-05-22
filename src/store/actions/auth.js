@@ -1,7 +1,7 @@
 import { AsyncStorage } from 'react-native';
 import { TRY_AUTH, AUTH_SET_TOKEN } from './actionTypes';
 import { API_AUTH_KEY } from './constants';
-import { uiStartLoading, uiStopLoading} from './index';
+import { uiStartLoading, uiStopLoading } from './index';
 import startMainTabs from '../../screens/MainTabs/startMainTabs';
 
 export const tryAuth = (authData, authMode) => {
@@ -68,6 +68,10 @@ export const authGetToken = () => {
         AsyncStorage.getItem('ap:auth:token')
           .catch((error) => reject())
           .then((tokenFromStorage) => {
+            if (!tokenFromStorage) {
+              reject();
+              return;
+            }
             dispatch(authSetToken(tokenFromStorage));
             resolve(tokenFromStorage);
           });
@@ -78,3 +82,14 @@ export const authGetToken = () => {
     return promise;
   };
 };
+
+export const authAutoSignIn = () => {
+  return (dispatch) => {
+    dispatch(authGetToken())
+      .then((token) => {
+        startMainTabs();
+      })
+      .catch((error) => console.log('Failed to fetch token!'));
+  };
+};
+
