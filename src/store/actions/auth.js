@@ -94,6 +94,9 @@ export const authGetToken = () => {
         resolve(token);
       }
     });
+    promise.catch((error) => {
+      dispatch(authClearStorage());
+    });
     return promise;
   };
 };
@@ -108,3 +111,9 @@ export const authAutoSignIn = () => {
   };
 };
 
+export const authClearStorage = () => {
+  return (dispatch) => {
+    AsyncStorage.removeItem('ap:auth:token');
+    AsyncStorage.removeItem('ap:auth:expiryDate');
+  }
+};
