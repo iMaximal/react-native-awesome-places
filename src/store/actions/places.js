@@ -3,17 +3,22 @@ import { uiStartLoading, uiStopLoading, authGetToken } from './index';
 
 export const addPlace = (placeName, location, image) => {
   return (dispatch) => {
+    let authToken = null;
     dispatch(uiStartLoading());
     dispatch(authGetToken())
       .catch(() => {
         alert('No valid token found!');
       })
       .then((token) => {
+        authToken = token;
         return fetch('https://us-central1-react-native-awe-1526404146569.cloudfunctions.net/storeImage', {
           method: 'POST',
           body: JSON.stringify({
             image: image.base64,
           }),
+          headers: {
+            'Authorization': `Bearer ${authToken}`
+          },
         })
       })
       .catch(error => {
@@ -28,7 +33,7 @@ export const addPlace = (placeName, location, image) => {
           location,
           image: parsedRes.imageUrl,
         };
-        return fetch('https://react-native-awe-1526404146569.firebaseio.com/places.json', {
+        return fetch(`https://react-native-awe-1526404146569.firebaseio.com/places.json?auth=${authToken}`, {
           method: 'POST',
           body: JSON.stringify(placeData),
         });
