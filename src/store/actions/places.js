@@ -38,11 +38,6 @@ export const addPlace = (placeName, location, image) => {
           body: JSON.stringify(placeData),
         });
       })
-      .catch(error => {
-        console.log(error);
-        alert('Something went wrong, please try again!');
-        dispatch(uiStopLoading());
-      })
       .then((res) => res.json())
       .then((parsedRes) => {
         console.log(parsedRes);
