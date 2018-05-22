@@ -1,3 +1,4 @@
+import { AsyncStorage } from 'react-native';
 import { TRY_AUTH, AUTH_SET_TOKEN } from './actionTypes';
 import { API_AUTH_KEY } from './constants';
 import { uiStartLoading, uiStopLoading} from './index';
@@ -34,7 +35,7 @@ export const tryAuth = (authData, authMode) => {
         if (!parsedRes.idToken) {
           alert('Authentication failed, please try again!');
         } else {
-          dispatch(authSetToken(parsedRes.idToken));
+          dispatch(authStoreToken(parsedRes.idToken));
           startMainTabs();
         }
       })
@@ -42,6 +43,13 @@ export const tryAuth = (authData, authMode) => {
         dispatch(uiStopLoading());
         alert('Server error. Please, try again late.');
       });
+  };
+};
+
+export const authStoreToken = (token) => {
+  return (dispatch) => {
+    dispatch(authSetToken(token));
+    AsyncStorage.setItem('ap:auth:token', token);
   };
 };
 
@@ -57,7 +65,12 @@ export const authGetToken = () => {
     const promise = new Promise((resolve, reject) => {
       const token = getState().auth.token;
       if (!token) {
-        reject();
+        AsyncStorage.getItem('ap:auth:token')
+          .catch((error) => reject())
+          .then((tokenFromStorage) => {
+            dispatch(authSetToken(tokenFromStorage));
+            resolve(tokenFromStorage);
+          });
       } else {
         resolve(token);
       }
