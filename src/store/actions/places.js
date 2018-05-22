@@ -1,15 +1,21 @@
 import { SET_PLACES, REMOVE_PLACE } from './actionTypes';
-import { uiStartLoading, uiStopLoading } from './index';
+import { uiStartLoading, uiStopLoading, authGetToken } from './index';
 
 export const addPlace = (placeName, location, image) => {
   return (dispatch) => {
     dispatch(uiStartLoading());
-    fetch('https://us-central1-react-native-awe-1526404146569.cloudfunctions.net/storeImage', {
-      method: 'POST',
-      body: JSON.stringify({
-        image: image.base64,
-      }),
-    })
+    dispatch(authGetToken())
+      .catch(() => {
+        alert('No valid token found!');
+      })
+      .then((token) => {
+        return fetch('https://us-central1-react-native-awe-1526404146569.cloudfunctions.net/storeImage', {
+          method: 'POST',
+          body: JSON.stringify({
+            image: image.base64,
+          }),
+        })
+      })
       .catch(error => {
         console.log(error);
         alert('Something went wrong, please try again!');
@@ -46,12 +52,14 @@ export const addPlace = (placeName, location, image) => {
 };
 
 export const getPlaces = () => {
-  return (dispatch, getState) => {
-    const token = getState().auth.token;
-    if (!token) {
-      return;
-    }
-    fetch(`https://react-native-awe-1526404146569.firebaseio.com/places.json?auth=${token}`)
+  return (dispatch) => {
+    dispatch(authGetToken())
+      .then((token) => {
+        return fetch(`https://react-native-awe-1526404146569.firebaseio.com/places.json?auth=${token}`);
+      })
+      .catch(() => {
+        alert('No valid token found!');
+      })
       .then((res) => res.json())
       .then((parsedRes => {
         const places = [];
@@ -82,10 +90,16 @@ export const setPlaces = (places) => {
 
 export const deletePlace = (key) => {
   return (dispatch) => {
-    dispatch(removePlace(key));
-    fetch('https://react-native-awe-1526404146569.firebaseio.com/places/' + key + '.json', {
-      method: 'DELETE',
-    })
+    dispatch(authGetToken())
+      .catch(() => {
+        alert('No valid token found!');
+      })
+      .then((token) => {
+        dispatch(removePlace(key));
+        return fetch(`https://react-native-awe-1526404146569.firebaseio.com/places/${key}.json?auth=${token}`, {
+          method: 'DELETE',
+        });
+      })
       .then((res) => res.json())
       .then((parsedRes) => {
         console.log('Done!');
