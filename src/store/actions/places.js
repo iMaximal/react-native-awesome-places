@@ -44,6 +44,7 @@ export const addPlace = (placeName, location, image) => {
           name: placeName,
           location,
           image: parsedRes.imageUrl,
+          imagePath: parsedRes.imagePath,
         };
         return fetch(`https://react-native-awe-1526404146569.firebaseio.com/places.json?auth=${authToken}`, {
           method: 'POST',
@@ -78,8 +79,10 @@ export const placeAdded = () => {
 
 export const getPlaces = () => {
   return (dispatch) => {
+    let authToken;
     dispatch(authGetToken())
       .then((token) => {
+        authToken = token;
         return fetch(`https://react-native-awe-1526404146569.firebaseio.com/places.json?auth=${token}`);
       })
       .catch(() => {
@@ -98,7 +101,7 @@ export const getPlaces = () => {
           places.push({
             ...parsedRes[key],
             image: {
-              uri: parsedRes[key].image,
+              uri: parsedRes[key].image + '?alt=media&token=' + authToken, // todo
             },
             key,
           });

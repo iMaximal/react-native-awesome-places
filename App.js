@@ -9,17 +9,20 @@ import configureStore from './src/store/configureStore';
 
 const store = configureStore();
 
+// Start a App
+const App = () => Navigation.startSingleScreenApp({
+  screen: {
+    screen: 'awesome-places.AuthScreen',
+    title: 'Login',
+  }
+});
+
 // Register Screens
+Navigation.registerComponent('awesome-places.App', () => App);
 Navigation.registerComponent('awesome-places.AuthScreen', () => AuthScreen, store, Provider);
 Navigation.registerComponent('awesome-places.SharePlaceScreen', () => SharePlaceScreen, store, Provider);
 Navigation.registerComponent('awesome-places.FindPlaceScreen', () => FindPlaceScreen, store, Provider);
 Navigation.registerComponent('awesome-places.PlaceDetailScreen', () => PlaceDetailScreen, store, Provider);
 Navigation.registerComponent('awesome-places.SideDrawer', () => SideDrawer, store, Provider);
 
-// Start a App
-export default () => Navigation.startSingleScreenApp({
-  screen: {
-    screen: 'awesome-places.AuthScreen',
-    title: 'Login',
-  }
-});
+export default App;
