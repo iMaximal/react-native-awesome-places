@@ -21,7 +21,19 @@ import validate from '../../utility/validation';
 class SharePlaceScreen extends Component {
   constructor(props) {
     super(props);
-    this.state = {
+    this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
+  }
+
+  static navigatorStyle = {
+    navBarButtonColor: 'orange',
+  };
+
+  componentWillMount() {
+    this.reset();
+  }
+
+  reset = () => {
+    this.setState({
       controls: {
         placeName: {
           value: '',
@@ -40,12 +52,7 @@ class SharePlaceScreen extends Component {
           valid: false,
         },
       }
-    };
-    this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
-  }
-
-  static navigatorStyle = {
-    navBarButtonColor: 'orange',
+    });
   };
 
   onNavigatorEvent = (event) => {
@@ -109,6 +116,9 @@ class SharePlaceScreen extends Component {
       this.state.controls.location.value,
       this.state.controls.image.value,
     );
+    this.reset();
+    this.imagePicker.reset();
+    this.locationPicker.reset();
   };
 
   render() {
@@ -125,7 +135,7 @@ class SharePlaceScreen extends Component {
     );
 
     if (this.props.isLoading) {
-      submitButton = <ActivityIndicator />;
+      submitButton = <ActivityIndicator/>;
     }
     return (
       <ScrollView>
@@ -136,9 +146,13 @@ class SharePlaceScreen extends Component {
           <MainText>
             <HeadingText>Share a Place with us!</HeadingText>
           </MainText>
-          <PickImage onImagePicked={ this.imagePickedHandler }/>
+          <PickImage
+            onImagePicked={ this.imagePickedHandler }
+            ref={ (ref) => this.imagePicker = ref }
+          />
           <PickLocation
             onLocationPick={ this.locationPickedHandler }
+            ref={ (ref) => this.locationPicker = ref }
           />
           <PlaceInput
             placeData={ this.state.controls.placeName }
