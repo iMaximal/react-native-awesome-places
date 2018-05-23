@@ -100,6 +100,10 @@
         "source": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-mdpi/abc_textfield_default_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher_background.png",
+        "source": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/generated/res/pngs/debug/drawable-mdpi/ic_launcher_background.png"
+    },
+    {
         "merged": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/res/merged/debug/drawable-mdpi/abc_list_selector_disabled_holo_dark.9.png",
         "source": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-mdpi/abc_list_selector_disabled_holo_dark.9.png"
     },

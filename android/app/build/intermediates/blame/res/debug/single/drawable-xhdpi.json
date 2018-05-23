@@ -16,12 +16,12 @@
         "source": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-xhdpi/abc_list_selector_disabled_holo_light.9.png"
     },
     {
-        "merged": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_voice_search_api_mtrl_alpha.png",
-        "source": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-xhdpi/abc_ic_voice_search_api_mtrl_alpha.png"
-    },
-    {
         "merged": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ab_share_pack_mtrl_alpha.9.png",
         "source": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-xhdpi/abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_voice_search_api_mtrl_alpha.png",
+        "source": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-xhdpi/abc_ic_voice_search_api_mtrl_alpha.png"
     },
     {
         "merged": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_go_search_api_mtrl_alpha.png",
@@ -118,6 +118,10 @@
     {
         "merged": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_list_focused_holo.9.png",
         "source": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-xhdpi/abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_launcher_background.png",
+        "source": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launcher_background.png"
     },
     {
         "merged": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/res/merged/debug/drawable-xhdpi/abc_ic_menu_selectall_mtrl_alpha.png",

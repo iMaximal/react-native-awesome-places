@@ -4,6 +4,10 @@
         "source": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-xxxhdpi/abc_ic_search_api_mtrl_alpha.png"
     },
     {
+        "merged": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_launcher_background.png",
+        "source": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png"
+    },
+    {
         "merged": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/abc_btn_check_to_on_mtrl_015.png",
         "source": "/Users/maximal/Projects/react-native-awesome-places/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/drawable-xxxhdpi/abc_btn_check_to_on_mtrl_015.png"
     },
