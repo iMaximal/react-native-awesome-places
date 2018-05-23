@@ -140,7 +140,8 @@ class AuthScreen extends Component {
         onPress={ this.authHandler }
         color="#29aaf4"
         disabled={
-          !this.state.controls.confirmPassword.valid && this.state.authMode === 'signup'
+          !this.state.controls.confirmPassword.valid
+          && this.state.authMode === 'signup'
           || !this.state.controls.email.valid
           || !this.state.controls.password.valid
         }

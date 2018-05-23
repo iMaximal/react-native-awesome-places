@@ -33,16 +33,18 @@ export const tryAuth = (authData, authMode) => {
       .then(res => res.json())
       .then((parsedRes) => {
         dispatch(uiStopLoading());
+        console.log(parsedRes);
         if (!parsedRes.idToken) {
           alert('Authentication failed, please try again!');
         } else {
-          dispatch(authStoreToken(parsedRes.idToken, parsedRes.expiresIn, parsedRes.refreshToken));
+          dispatch(
+            authStoreToken(
+              parsedRes.idToken,
+              parsedRes.expiresIn,
+              parsedRes.refreshToken
+            ));
           startMainTabs();
         }
-      })
-      .catch((error) => {
-        dispatch(uiStopLoading());
-        alert('Server error. Please, try again late.');
       });
   };
 };
@@ -72,7 +74,7 @@ export const authGetToken = () => {
       const token = getState().auth.token;
       const expiryDate = getState().auth.expiryDate;
       if (!token || new Date(expiryDate) <= new Date()) {
-        let fetchedToken = null;
+        let fetchedToken;
         AsyncStorage.getItem('ap:auth:token')
           .catch((error) => reject())
           .then((tokenFromStorage) => {
@@ -128,7 +130,7 @@ export const authGetToken = () => {
       })
       .then((token) => {
         if (!token) {
-          throw(new Error());
+          throw new Error();
         } else {
           return token;
         }
@@ -157,7 +159,9 @@ export const authClearStorage = () => {
 export const authLogout = () => {
   return (dispatch) => {
     dispatch(authClearStorage())
-      .then(() => App());
+      .then(() => {
+        App();
+      });
     dispatch(authRemoveToken());
   };
 };
