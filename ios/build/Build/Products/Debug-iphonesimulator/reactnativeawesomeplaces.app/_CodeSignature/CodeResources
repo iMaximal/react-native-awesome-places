@@ -4,9 +4,45 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AppIcon20x20@2x.png</key>
+		<data>
+		PCM0+TLiy0ZdA3oqwxgb9fVPlgs=
+		</data>
+		<key>AppIcon20x20@3x.png</key>
+		<data>
+		jVXtm+O1B9My3j/aBl1aHGqjVuU=
+		</data>
+		<key>AppIcon29x29@2x.png</key>
+		<data>
+		rqVUsvocO6knYtk4vrCVAZomYG0=
+		</data>
+		<key>AppIcon29x29@3x.png</key>
+		<data>
+		LDJMYPglMRnMtQ/itlV0whZj6Og=
+		</data>
+		<key>AppIcon40x40@2x.png</key>
+		<data>
+		96jUkkuJ5p5iIdQDRqNnScC8enc=
+		</data>
+		<key>AppIcon40x40@3x.png</key>
+		<data>
+		ITB28NJDckdJA6WEsYoBvPkpUeA=
+		</data>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		ITB28NJDckdJA6WEsYoBvPkpUeA=
+		</data>
+		<key>AppIcon60x60@3x.png</key>
+		<data>
+		I/ikbeL8BOI8hn1t9RMNLMSWhAk=
+		</data>
+		<key>Assets.car</key>
+		<data>
+		3HM3FhM7XtjG/2adLupfhqqu8Jg=
+		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		khIIgFCEx0fzXFqYwjsayJg5wsQ=
+		32XFa/MpDsO0TIBsmRvz6zDfhbE=
 		</data>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
 		<data>
@@ -51,7 +87,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jdnf/K6NyKeu2qIlN/AlNzYTOzM=
+		f8njcZDTKXt9x3p6bWgMuwije/8=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
@@ -67,7 +103,7 @@
 		</data>
 		<key>PlugIns/reactnativeawesomeplacesTests.xctest.dSYM/Contents/Resources/DWARF/reactnativeawesomeplacesTests</key>
 		<data>
-		gFVX9sO9SVdIa7xlBR5zza5ylRg=
+		DZJx3+YpyY9eZ6aifMcHQaIB3wo=
 		</data>
 		<key>PlugIns/reactnativeawesomeplacesTests.xctest/Info.plist</key>
 		<data>
@@ -79,20 +115,119 @@
 		</data>
 		<key>PlugIns/reactnativeawesomeplacesTests.xctest/reactnativeawesomeplacesTests</key>
 		<data>
-		AslsSlACEzlJ7mkmu9pC6coYh9o=
+		TbX9hOVKBkeIjhf/vo9ROiLyY4U=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AppIcon20x20@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PCM0+TLiy0ZdA3oqwxgb9fVPlgs=
+			</data>
+			<key>hash2</key>
+			<data>
+			nPpiq4jEoQx6R2oPvPrV5p4g8KYVVjpg2OfkTo56afY=
+			</data>
+		</dict>
+		<key>AppIcon20x20@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jVXtm+O1B9My3j/aBl1aHGqjVuU=
+			</data>
+			<key>hash2</key>
+			<data>
+			Y9oz/m5n+u2mXt+jbhfpR7beBqkEyvASBzou2TiWsSc=
+			</data>
+		</dict>
+		<key>AppIcon29x29@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rqVUsvocO6knYtk4vrCVAZomYG0=
+			</data>
+			<key>hash2</key>
+			<data>
+			P/5UNr3nY0/N2Ilxwy1sacH6CgAEq/697Lwvb5Z4Tpg=
+			</data>
+		</dict>
+		<key>AppIcon29x29@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LDJMYPglMRnMtQ/itlV0whZj6Og=
+			</data>
+			<key>hash2</key>
+			<data>
+			cO6zkgHwbb43pa2ucE0CVLt35OBXMQa4iRmr3NfyC7o=
+			</data>
+		</dict>
+		<key>AppIcon40x40@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			96jUkkuJ5p5iIdQDRqNnScC8enc=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ol9SLf+di20JjQ1NkrD8Sb87C3aTsPBHCMq0dseqKo8=
+			</data>
+		</dict>
+		<key>AppIcon40x40@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ITB28NJDckdJA6WEsYoBvPkpUeA=
+			</data>
+			<key>hash2</key>
+			<data>
+			uMk0nBPI9rqzLAd03x8dNodXtQWejKGzsu0DmkDeMD4=
+			</data>
+		</dict>
+		<key>AppIcon60x60@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ITB28NJDckdJA6WEsYoBvPkpUeA=
+			</data>
+			<key>hash2</key>
+			<data>
+			uMk0nBPI9rqzLAd03x8dNodXtQWejKGzsu0DmkDeMD4=
+			</data>
+		</dict>
+		<key>AppIcon60x60@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			I/ikbeL8BOI8hn1t9RMNLMSWhAk=
+			</data>
+			<key>hash2</key>
+			<data>
+			Cwic2FHTDXjwyLpcFxvqLKjJ5mgfS6GfKXS8HEHN04E=
+			</data>
+		</dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3HM3FhM7XtjG/2adLupfhqqu8Jg=
+			</data>
+			<key>hash2</key>
+			<data>
+			/M8m8vyoMUQ4SdCZTSDMsDEOyqYSMgn0bZTAwEyprMA=
+			</data>
+		</dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			khIIgFCEx0fzXFqYwjsayJg5wsQ=
+			32XFa/MpDsO0TIBsmRvz6zDfhbE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Vozr0mzoafcdPsOfc+fDcxqLhRBAhTOblN17nHXCTxg=
+			3FynI5pEabbSPbFDY1IHPyh9ByAK1WloMVURyqed4Hw=
 			</data>
 		</dict>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
@@ -222,11 +357,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gFVX9sO9SVdIa7xlBR5zza5ylRg=
+			DZJx3+YpyY9eZ6aifMcHQaIB3wo=
 			</data>
 			<key>hash2</key>
 			<data>
-			a4zrf9Ntw+LtkwTirJWBXMqtYgx+LOEyb/IcsYSVf2o=
+			/a9p/lhLj4MNs66hgR3KrptYpJWFwQCNAKfrqwb+dxA=
 			</data>
 		</dict>
 		<key>PlugIns/reactnativeawesomeplacesTests.xctest/Info.plist</key>
@@ -255,11 +390,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AslsSlACEzlJ7mkmu9pC6coYh9o=
+			TbX9hOVKBkeIjhf/vo9ROiLyY4U=
 			</data>
 			<key>hash2</key>
 			<data>
-			szw1sSsUNbS2AICi3r9q/DWjLaaBSudFTca6jhvrL24=
+			38r3BZfj1ZNBtE3NwBJK0dSxNoDknqtZZjozylARwb0=
 			</data>
 		</dict>
 	</dict>
