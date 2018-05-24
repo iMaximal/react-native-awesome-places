@@ -1,9 +1,15 @@
 
 # React Native: Awesome places
 
-For study.
-
 iOS & Android App.
+
+## Description
+This app allow you to mark your (or custom) position on Google Map, attach a photo, make a description of this point.
+
+Auth supported, permissions are correct.
+
+The data saves on cloud (firebase).
+
 
 Technologies: React Native (navigation, vector-icons, image picker, maps), Firebase (storage, function, database, API, auth).
 
